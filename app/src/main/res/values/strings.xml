@@ -21,4 +21,9 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="login">LOGIN</string>
+    <string name="beranda">Beranda</string>
+    <string name="laporan_perhari">Laporan Perhari</string>
+    <string name="keluar">Keluar</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="laporan_perbulan">Laporan Perbulan</string>
 </resources>
