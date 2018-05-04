@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "406779341366",
+    "firebase_url": "https://bitsmitstockapps.firebaseio.com",
+    "project_id": "bitsmitstockapps",
+    "storage_bucket": "bitsmitstockapps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406779341366:android:704cae42cf59096f",
+        "android_client_info": {
+          "package_name": "com.raion.putrautama.bitsmitstockapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406779341366-6kg037llqihkjkgke7lg5hganl5na79c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.raion.putrautama.bitsmitstockapps",
+            "certificate_hash": "c64ce6c986ca4ff4b385e3858aa4c25cad2f1894"
+          }
+        },
+        {
+          "client_id": "406779341366-qaqi2l714flm4hgjh58voks2h9sbi20k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.raion.putrautama.bitsmitstockapps",
+            "certificate_hash": "73b339b3120fec0fdd4c9209c46aafe3f71c8434"
+          }
+        },
+        {
+          "client_id": "406779341366-msrmobve0epq0kp3i8m47r1o69vpgvt8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv22HcDv1NyZLORj8Tszoib-ph46cSkQ8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406779341366-msrmobve0epq0kp3i8m47r1o69vpgvt8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
