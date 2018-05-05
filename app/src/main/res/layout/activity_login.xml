@@ -19,36 +19,79 @@
             android:layout_gravity="center"
             />
 
-        <EditText
-            android:id="@+id/email"
-            android:backgroundTint="@color/background_tint"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginBottom="15dp"
+        <TextView
+            android:layout_marginBottom="100dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:inputType="textEmailAddress"
-            android:hint="@string/email"/>
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="@string/bismitstock_apps"/>
 
-        <EditText
-            android:id="@+id/password"
-            android:backgroundTint="@color/background_tint"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
             android:layout_marginBottom="15dp"
-            android:textSize="20sp"
-            android:inputType="textPassword"
-            android:hint="@string/password"/>
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_email"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:backgroundTint="@color/background_tint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_password"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:backgroundTint="@color/background_tint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:inputType="textPassword"
+                android:hint="@string/password"/>
+
+        </LinearLayout>
+
+
 
         <Button
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
             android:id="@+id/btnLogin"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_orange"
             android:text="@string/login"/>
     </LinearLayout>
 

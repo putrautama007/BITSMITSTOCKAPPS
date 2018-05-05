@@ -18,12 +18,31 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
+    <string name="email">e-mail</string>
+    <string name="password">password</string>
     <string name="login">LOGIN</string>
     <string name="beranda">Beranda</string>
     <string name="laporan_perhari">Laporan Perhari</string>
     <string name="keluar">Keluar</string>
     <string name="tentang_aplikasi">Tentang Aplikasi</string>
     <string name="laporan_perbulan">Laporan Perbulan</string>
+    <string name="bismitstock_apps">BISMITSTOCK APPS</string>
+    <string name="nama_barang">Nama Barang</string>
+    <string name="rp_5000">Rp. 5000</string>
+    <string name="urutkan">Urutkan</string>
+    <string name="tambah">Tambah</string>
+    <string name="next"><![CDATA[Next >]]></string>
+
+
+    <string name="pref_name">My Pref</string>
+    <string name="pref_key">My Key</string>
+
+    <string name="slide1_title">Slide 1</string>
+    <string name="slide1_des">slide 1 Des</string>
+
+    <string name="slide2_title">Slide 2</string>
+    <string name="slide2_des">slide 2 Des</string>
+
+    <string name="slide3_title">Slide 3</string>
+    <string name="slide3_des">slide 3 Des</string>
 </resources>

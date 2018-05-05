@@ -25,6 +25,11 @@
         <activity
             android:name=".LoginActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".IntroSliderActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+
+        </activity>
     </application>
 
 </manifest>
