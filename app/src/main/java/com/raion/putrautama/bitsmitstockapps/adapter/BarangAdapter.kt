@@ -21,12 +21,12 @@ class BarangAdapter(val listBarang : ArrayList<Barang>) : RecyclerView.Adapter<B
     }
 
     override fun onBindViewHolder(holder: MyViewHolder?, position: Int) {
-        holder?.namaBarangTv?.text = listBarang.get(position).nama_barang
+        holder?.namaBarangTv?.text = listBarang.get(position).nama
 
         val harga = "Rp "+listBarang.get(position).harga
-        holder?.hargaBarangTv?.text = listBarang.get(position).harga
+        holder?.hargaBarangTv?.text = harga
 
-        holder?.stockBarangTv?.text = listBarang.get(position).jumlah
+        holder?.stockBarangTv?.text = listBarang.get(position).jumlah.toString()
     }
 
     class MyViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView) {

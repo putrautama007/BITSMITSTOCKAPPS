@@ -19,7 +19,7 @@ class SortingDialog : BottomSheetDialogFragment() {
                               container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
 
-        return inflater!!.inflate(R.layout.sorting_dialog, container,
+        return inflater.inflate(R.layout.sorting_dialog, container,
                 false)
 
     }
