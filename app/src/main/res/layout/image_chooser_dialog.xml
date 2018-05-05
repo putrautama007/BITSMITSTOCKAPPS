@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<TextView
+    android:id="@+id/pick_image"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Tambah Gambar"
+    android:textSize="30sp"
+    android:textColor="#000"/>
+
+    <LinearLayout
+        android:padding="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:id="@+id/camera"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/pick_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_camera"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:textColor="#000"
+            android:layout_marginLeft="16dp"
+            android:textSize="22sp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camera"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:id="@+id/gallery"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_camera"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:textColor="#000"
+            android:layout_marginLeft="16dp"
+            android:textSize="22sp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gallery"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
