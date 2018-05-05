@@ -51,7 +51,7 @@ class AllItemsFragment : Fragment() {
                     val jumlah = data.child("jumlah").value.toString()
                     val harga = data.child("harga").value.toString()
 
-                    listItems.add(Barang(foto, harga, jumlah, nama))
+                    listItems.add(Barang(foto, harga, jumlah.toInt(), nama, ""))
 
                 }
 
@@ -126,7 +126,7 @@ class AllItemsFragment : Fragment() {
                     val jumlah = data.child("jumlah").value.toString()
                     val harga = data.child("harga").value.toString()
 
-                    listItems.add(Barang(foto, harga, jumlah, nama))
+                    listItems.add(Barang(foto, harga, jumlah.toInt(), nama, ""))
 
                 }
 
@@ -158,7 +158,7 @@ class AllItemsFragment : Fragment() {
                     val jumlah = data.child("jumlah").value.toString()
                     val harga = data.child("harga").value.toString()
 
-                    listItems.add(Barang(foto, harga, jumlah, nama))
+                    listItems.add(Barang(foto, harga, jumlah.toInt(), nama, ""))
 
                 }
 
