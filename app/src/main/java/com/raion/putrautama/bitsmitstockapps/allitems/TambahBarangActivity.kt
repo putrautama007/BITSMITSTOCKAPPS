@@ -1,4 +1,4 @@
-package com.raion.putrautama.bitsmitstockapps
+package com.raion.putrautama.bitsmitstockapps.allitems
 
 import android.app.Activity
 import android.content.Intent
@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.provider.MediaStore
 import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
+import android.view.MenuItem
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -16,6 +17,7 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.storage.FirebaseStorage
+import com.raion.putrautama.bitsmitstockapps.R
 import com.raion.putrautama.bitsmitstockapps.kategori.Kategori
 import com.raion.putrautama.bitsmitstockapps.model.Barang
 import kotlinx.android.synthetic.main.activity_tambah_barang.*
@@ -36,6 +38,9 @@ class TambahBarangActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tambah_barang)
+
+        supportActionBar?.setTitle("Tambah Barang")
+        supportActionBar?.setDisplayHomeAsUpEnabled(true);
 
         getListKategori()
         setupSpinnerKategori()
@@ -119,8 +124,8 @@ class TambahBarangActivity : AppCompatActivity() {
 
         val mRef = FirebaseDatabase.getInstance().reference.child("barang")
 
-        val barang = Barang(barangUrl, harga, stock, namaBarang, kategoriID)
         val key = mRef.push().key
+        val barang = Barang(barangUrl, harga.toInt(), stock, namaBarang, kategoriID, key)
 
         mRef.child(key).setValue(barang).addOnCompleteListener { task ->
             alertDialog.dismiss()
@@ -176,7 +181,6 @@ class TambahBarangActivity : AppCompatActivity() {
 
             photoUri = data.data
 
-            val cropIntent = Intent("com.android.camera.action.CROP")
 
             try {
                 val bitmap = MediaStore.Images.Media
@@ -199,6 +203,19 @@ class TambahBarangActivity : AppCompatActivity() {
         dialogBuilder.setCancelable(false)
         alertDialog = dialogBuilder.create()
         alertDialog.show()
+    }
+
+
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.getItemId()) {
+            android.R.id.home -> {
+                onBackPressed()
+                return true
+            }
+        }
+
+        return super.onOptionsItemSelected(item)
     }
 
 }

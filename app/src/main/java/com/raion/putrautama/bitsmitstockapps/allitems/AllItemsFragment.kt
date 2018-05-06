@@ -1,10 +1,11 @@
-package com.raion.putrautama.bitsmitstockapps
+package com.raion.putrautama.bitsmitstockapps.allitems
 
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,6 +13,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import com.raion.putrautama.bitsmitstockapps.R
 import com.raion.putrautama.bitsmitstockapps.adapter.BarangAdapter
 import com.raion.putrautama.bitsmitstockapps.model.Barang
 import kotlinx.android.synthetic.main.fragment_all_items.*
@@ -34,6 +36,7 @@ class AllItemsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val recyclerView = view.findViewById(R.id.recyclerView) as RecyclerView
         recyclerView.layoutManager = LinearLayoutManager(context)
 
 
@@ -47,15 +50,16 @@ class AllItemsFragment : Fragment() {
                 listItems.clear()
                 for (data in p0.children) {
                     nama = data.child("nama").value.toString()
+                    val id = data.child("barang_id").value.toString()
                     val foto = data.child("foto").value.toString()
                     val jumlah = data.child("jumlah").value.toString()
                     val harga = data.child("harga").value.toString()
 
-                    listItems.add(Barang(foto, harga, jumlah.toInt(), nama, ""))
+                    listItems.add(Barang(foto, harga.toInt(), jumlah.toInt(), nama, "", id))
 
                 }
 
-                mAdapter = BarangAdapter(listItems)
+                mAdapter = BarangAdapter(listItems, context)
                 recyclerView.adapter = mAdapter
                 mAdapter.notifyDataSetChanged()
 
@@ -122,15 +126,16 @@ class AllItemsFragment : Fragment() {
                 listItems.clear()
                 for (data in p0.children) {
                     nama = data.child("nama").value.toString()
+                    val id = data.child("barang_id").value.toString()
                     val foto = data.child("foto").value.toString()
                     val jumlah = data.child("jumlah").value.toString()
                     val harga = data.child("harga").value.toString()
 
-                    listItems.add(Barang(foto, harga, jumlah.toInt(), nama, ""))
+                    listItems.add(Barang(foto, harga.toInt(), jumlah.toInt(), nama, "",id))
 
                 }
 
-                mAdapter = BarangAdapter(listItems)
+                mAdapter = BarangAdapter(listItems, context)
                 recyclerView.adapter = mAdapter
                 mAdapter.notifyDataSetChanged()
 
@@ -154,15 +159,16 @@ class AllItemsFragment : Fragment() {
                 listItems.clear()
                 for (data in p0.children) {
                     nama = data.child("nama").value.toString()
+                    val id = data.child("barang_id").value.toString()
                     val foto = data.child("foto").value.toString()
                     val jumlah = data.child("jumlah").value.toString()
                     val harga = data.child("harga").value.toString()
 
-                    listItems.add(Barang(foto, harga, jumlah.toInt(), nama, ""))
+                    listItems.add(Barang(foto, harga.toInt(), jumlah.toInt(), nama, "",id))
 
                 }
 
-                mAdapter = BarangAdapter(listItems)
+                mAdapter = BarangAdapter(listItems, context)
                 recyclerView.adapter = mAdapter
                 mAdapter.notifyDataSetChanged()
 

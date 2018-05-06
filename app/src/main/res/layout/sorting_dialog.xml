@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    >
 
     <TextView
         android:id="@+id/nama_barang_tv"
@@ -16,6 +17,11 @@
         android:textSize="18sp"
         android:focusable="true" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
     <TextView
         android:id="@+id/stock_terbanyak_tv"
         android:padding="10dp"
@@ -27,6 +33,11 @@
         android:textSize="18sp"
         android:focusable="true" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
     <TextView
         android:id="@+id/stock_tersedikit_tv"
         android:background="?android:attr/selectableItemBackground"
@@ -37,6 +48,11 @@
         android:text="Stock Tersedikit"
         android:textSize="18sp"
         android:focusable="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
 
 
     <TextView
@@ -50,6 +66,11 @@
         android:textSize="18sp"
         android:focusable="true" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
     <TextView
         android:id="@+id/harga_terendah_tv"
         android:background="?android:attr/selectableItemBackground"
@@ -61,9 +82,16 @@
         android:textSize="18sp"
         android:focusable="true" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
     <Button
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
         android:id="@+id/tutup_btn"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:text="Tutup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

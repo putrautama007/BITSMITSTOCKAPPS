@@ -16,7 +16,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val context = this
+
         setSupportActionBar(toolbar)
+        supportActionBar?.title = "Beranda"
 
         updateFragment(MainFragment())
 
@@ -43,6 +46,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         when (item.itemId) {
             R.id.nav_beranda -> {
+                supportActionBar?.title = "Beranda"
                 updateFragment(MainFragment())
             }
 

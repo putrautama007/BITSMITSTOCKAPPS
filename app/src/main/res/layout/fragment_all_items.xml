@@ -3,10 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AllItemsFragment"
+    tools:context=".allitems.AllItemsFragment"
     android:orientation="vertical">
 
     <android.support.v7.widget.RecyclerView
+        android:background="#f2f2f2"
         android:layout_above="@id/button_top_bar"
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"

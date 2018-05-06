@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".kategori.AddKategoriActivity">
+    tools:context=".barang.AddKategoriActivity">
 
     <TextView
         android:id="@+id/tambah_kategori_tv"
@@ -37,6 +37,8 @@
         android:lines="1"/>
 
     <Button
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
         android:id="@+id/button_selesai"
         android:layout_marginBottom="40dp"
         android:layout_width="match_parent"

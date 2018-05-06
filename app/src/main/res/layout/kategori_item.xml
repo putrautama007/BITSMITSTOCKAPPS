@@ -17,7 +17,10 @@
             android:id="@+id/kategori_icon"
             android:layout_width="64dp"
             android:layout_height="64dp"
-            android:layout_margin="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             app:srcCompat="@drawable/ic_launcher_background" />
 
         <TextView

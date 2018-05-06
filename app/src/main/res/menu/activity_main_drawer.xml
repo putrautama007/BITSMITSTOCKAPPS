@@ -3,12 +3,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group>
         <item
             android:id="@+id/nav_beranda"
-            android:icon="@drawable/ic_home"
+            android:icon="@drawable/home"
             android:title="Beranda" />
 
+        <item
+            android:id="@+id/nav_lap_perhari"
+            android:icon="@drawable/laporan_perhari"
+            android:title="Laporan Perhari" />
+
+        <item
+            android:id="@+id/nav_lap_perbulan"
+            android:icon="@drawable/laporan_perbulan"
+            android:title="Laporan Perbulan" />
+
+        <item
+            android:id="@+id/nav_tentang"
+            android:icon="@drawable/about"
+            android:title="Tentang Aplikasi" />
+
+        <item
+            android:id="@+id/nav_keluar"
+            android:icon="@drawable/sign_out"
+            android:title="Keluar" />
     </group>
 
 </menu>

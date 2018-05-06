@@ -1,4 +1,4 @@
-package com.raion.putrautama.bitsmitstockapps.kategori
+package com.raion.putrautama.bitsmitstockapps.restock
 
 
 import android.content.Intent
@@ -14,18 +14,19 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.raion.putrautama.bitsmitstockapps.R
-import kotlinx.android.synthetic.main.fragment_kategori.*
+import com.raion.putrautama.bitsmitstockapps.kategori.Kategori
+import com.raion.putrautama.bitsmitstockapps.sell.Kategori2Adapter
 
 
-class KategoriFragment : Fragment() {
+class RestockFragment : Fragment() {
 
     var listKategori = arrayListOf<Kategori>()
-    lateinit var mAdapter : KategoriAdapter
+    lateinit var mAdapter : Kategori2Adapter
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-
-        return inflater.inflate(R.layout.fragment_kategori, container, false)
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_sell, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -50,19 +51,22 @@ class KategoriFragment : Fragment() {
 
                 }
 
-                mAdapter = KategoriAdapter(listKategori)
+                mAdapter = Kategori2Adapter(listKategori,
+                        {kategori -> intentToListBarang(kategori) })
                 recyclerView.adapter = mAdapter
                 mAdapter.notifyDataSetChanged()
 
             }
         })
 
-        add_kategori.setOnClickListener{
-            val intent = Intent(activity, AddKategoriActivity::class.java)
-            startActivity(intent)
-        }
-
     }
 
+    fun intentToListBarang(kategori: Kategori){
+        val intent =  Intent(context, ListBarang2Activity::class.java)
+        intent.putExtra("kategoriName", kategori.nama)
+        intent.putExtra("kategoriId", kategori.kategoriId)
+        startActivity(intent)
+
+    }
 
 }
