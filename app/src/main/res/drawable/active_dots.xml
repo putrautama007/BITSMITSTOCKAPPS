@@ -6,8 +6,8 @@
     android:dither="true">
 
     <size
-        android:height="8dp"
-        android:width="8dp"/>
+        android:height="20dp"
+        android:width="20dp"/>
 
     <solid
         android:color="@color/active_dots"/>

@@ -8,8 +8,8 @@
         android:color="@color/black"
         android:width="1dp"/>
     <size
-        android:height="8dp"
-        android:width="8dp"/>
+        android:height="20dp"
+        android:width="20dp"/>
 
     <solid
         android:color="@color/inactive_dots"/>

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "406779341366-6kg037llqihkjkgke7lg5hganl5na79c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.raion.putrautama.bitsmitstockapps",
+            "certificate_hash": "c64ce6c986ca4ff4b385e3858aa4c25cad2f1894"
+          }
+        },
+        {
           "client_id": "406779341366-qaqi2l714flm4hgjh58voks2h9sbi20k.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

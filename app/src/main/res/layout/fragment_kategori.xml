@@ -3,15 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".KategoriFragment">
+    tools:context=".kategori.KategoriFragment">
 
-   <android.support.v7.widget.RecyclerView
-       android:background="#f2f2f2"
-       android:id="@+id/recyclerView"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:clipToPadding="false"
-       android:scrollbars="vertical"/>
+    <android.support.v7.widget.RecyclerView
+        android:background="#f2f2f2"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"/>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/add_kategori"

@@ -6,30 +6,31 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:scaleType="centerCrop"
+        android:padding="40dp"
         android:id="@+id/imageViewSlide"
-        android:layout_marginTop="150dp"
-        android:src="@drawable/ic_email"
-        android:layout_centerHorizontal="true"/>
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logooo" />
     
     <TextView
+        android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/slide1_title"
+        android:text="Welcome to"
         android:textSize="30sp"
-        android:textStyle="bold"
         android:layout_below="@+id/imageViewSlide"
         android:gravity="center_horizontal"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="20dp"
         android:id="@+id/slide_title"/>
     <TextView
+        android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/slide1_des"
+        android:text="BISMITSTOCK APPS"
         android:textSize="30sp"
-        android:textStyle="bold"
         android:layout_below="@+id/slide_title"
         android:gravity="center_horizontal"
         android:layout_marginTop="12dp"
