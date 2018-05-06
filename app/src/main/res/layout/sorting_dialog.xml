@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/nama_barang_tv"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/nama_barang"
+        android:textSize="18sp"
+        android:focusable="true"/>
+
+    <TextView
+        android:id="@+id/stock_terbanyak_tv"
+        android:padding="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/stock_terbanyak"
+        android:focusable="true"/>
+
+    <TextView
+        android:id="@+id/stock_tersedikit_tv"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/stock_tersedikit"
+        android:textSize="18sp"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/harga_tertinggi_tv"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="10dp"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/harga_tertinggi"
+        android:textSize="18sp"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/harga_terendah_tv"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="@string/harga_terendah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:focusable="true"/>
+
+    <Button
+        android:id="@+id/tutup_btn"
+        android:layout_marginTop="8dp"
+        android:text="@string/tutup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

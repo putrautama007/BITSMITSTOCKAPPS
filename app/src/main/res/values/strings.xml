@@ -45,4 +45,19 @@
 
     <string name="slide3_title">Slide 3</string>
     <string name="slide3_des">slide 3 Des</string>
+    <string name="stock_terbanyak">Stock Terbanyak</string>
+    <string name="stock_tersedikit">Stock Tersedikit</string>
+    <string name="harga_tertinggi">Harga Tertinggi</string>
+    <string name="harga_terendah">Harga Terendah</string>
+    <string name="tutup">Tutup</string>
+    <string name="pilih_kategori">Pilih Kategori</string>
+    <string name="harga">Harga</string>
+    <string name="kuantitas">Kuantitas</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="selesai">Selesai</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="stock_barang">5</string>
+    <string name="tambah_kategori">Tambah Kategori</string>
 </resources>

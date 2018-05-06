@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_beranda"
+            android:icon="@drawable/ic_home"
+            android:title="@string/beranda" />
+        <item
+            android:id="@+id/nav_laporan_perhari"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/laporan_perhari"/>
+        <item
+            android:id="@+id/nav_laporan_perbulan"
+            android:icon="@drawable/ic_menu_delete"
+            android:title="@string/laporan_perbulan"/>
+        <item
+            android:id="@+id/nav_tentang_aplikasi"
+            android:icon="@drawable/ic_menu_tentang"
+            android:title="@string/tentang_aplikasi"/>
+        <item
+            android:id="@+id/nav_keluar"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/keluar"/>
+
+    </group>
+
+</menu>
