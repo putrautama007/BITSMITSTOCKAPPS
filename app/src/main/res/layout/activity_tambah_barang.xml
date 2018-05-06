@@ -5,13 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context=".TambahBarangActivity">
+        tools:context=".allitems.TambahBarangActivity">
 
         <RelativeLayout
             android:id="@+id/add_photo"
@@ -26,14 +25,14 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:background="#e0e0e0"
-                android:src="@drawable/ic_camera"/>
+                android:src="@drawable/ic_camera" />
 
             <ImageView
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true"
-                android:src="@drawable/ic_add"/>
+                android:src="@drawable/ic_add" />
 
         </RelativeLayout>
 
@@ -43,8 +42,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="32dp"
-            android:text="@string/pilih_kategori"
-            android:textSize="18sp"/>
+            android:text="Pilih Kategori"
+            android:textSize="18sp" />
 
         <android.support.v7.widget.AppCompatSpinner
             android:id="@+id/spinner_kategori"
@@ -60,8 +59,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="18dp"
-            android:text="@string/nama_barang"
-            android:textSize="18sp"/>
+            android:text="Nama Barang"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/nama_barang_et"
@@ -71,15 +70,15 @@
             android:layout_marginRight="16dp"
             android:layout_marginTop="8dp"
             android:ems="10"
-            android:inputType="text"/>
+            android:inputType="text" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="18dp"
-            android:text="@string/harga"
-            android:textSize="18sp"/>
+            android:text="Harga"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/harga_et"
@@ -89,15 +88,15 @@
             android:layout_marginRight="16dp"
             android:layout_marginTop="8dp"
             android:ems="10"
-            android:inputType="text"/>
+            android:inputType="text" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="18dp"
-            android:text="@string/kuantitas"
-            android:textSize="18sp"/>
+            android:text="Kuantitas"
+            android:textSize="18sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -107,11 +106,12 @@
             android:layout_marginTop="32dp">
 
             <Button
+                android:background="@color/colorPrimary"
                 android:id="@+id/btnMinus"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:text="@string/minus"/>
+                android:text="-" />
 
             <TextView
                 android:id="@+id/kuantitas_tv"
@@ -121,17 +121,20 @@
                 android:layout_weight="2.5"
                 android:gravity="center"
                 android:text="0"
-                android:textSize="40sp"/>
+                android:textSize="40sp" />
 
             <Button
+                android:background="@color/colorPrimary"
                 android:id="@+id/btnPlus"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:text="@string/plus"/>
+                android:text="+" />
+
         </LinearLayout>
 
         <Button
+            android:background="@color/colorAccent"
             android:layout_marginBottom="30dp"
             android:id="@+id/btnSend"
             android:layout_width="match_parent"
@@ -139,7 +142,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="48dp"
-            android:text="@string/selesai"/>
+            android:text="Selesai" />
+
 
     </LinearLayout>
 
