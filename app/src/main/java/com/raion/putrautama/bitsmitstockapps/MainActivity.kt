@@ -16,11 +16,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        val context = this
-
         setSupportActionBar(toolbar)
-        supportActionBar?.title = "Beranda"
+        supportActionBar?.title = getString(R.string.beranda)
 
         updateFragment(MainFragment())
 
@@ -28,9 +25,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
         drawer_layout.addDrawerListener(toggle)
         toggle.syncState()
-
-
-
         nav_view.setNavigationItemSelectedListener(this)
     }
 
@@ -42,12 +36,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
-
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
 
         when (item.itemId) {
             R.id.nav_beranda -> {
-                supportActionBar?.title = "Beranda"
+                supportActionBar?.title = getString(R.string.beranda)
                 updateFragment(MainFragment())
             }
             R.id.nav_keluar ->{
@@ -55,7 +48,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 startActivity(intent)
                 finish()
             }
-
         }
 
         drawer_layout.closeDrawer(GravityCompat.START)

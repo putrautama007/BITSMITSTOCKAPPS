@@ -56,7 +56,7 @@ class TambahBarangActivity : AppCompatActivity() {
             val intent = Intent()
             intent.type = "image/*"
             intent.action = Intent.ACTION_GET_CONTENT
-            startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST)
+            startActivityForResult(Intent.createChooser(intent, getString(R.string.select_picture)), PICK_IMAGE_REQUEST)
         }
 
         btnSend.setOnClickListener{
@@ -125,7 +125,7 @@ class TambahBarangActivity : AppCompatActivity() {
         mRef.child(key).setValue(barang).addOnCompleteListener { task ->
             alertDialog.dismiss()
             if (task.isSuccessful) {
-                Toast.makeText(this, "Barang berhasil ditambahkan", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.berhasil_tambah), Toast.LENGTH_SHORT).show()
                 finish()
             }else {
                 Toast.makeText(this, task.exception.toString(), Toast.LENGTH_SHORT).show()

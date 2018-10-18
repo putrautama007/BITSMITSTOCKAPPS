@@ -136,7 +136,6 @@ class AllItemsFragment : Fragment() {
 
                     listItems.add(Barang(foto, harga.toInt(), jumlah.toInt(), nama, "", id))
 
-
                 }
 
                 mAdapter = BarangAdapter(listItems, context)

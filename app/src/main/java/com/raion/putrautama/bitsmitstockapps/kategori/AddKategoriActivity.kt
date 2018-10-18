@@ -36,8 +36,6 @@ class AddKategoriActivity : AppCompatActivity(), KategoriIconDialog.OnIconSelect
         button_selesai.setOnClickListener{
             addNewKategori()
         }
-
-
     }
 
     private fun addNewKategori() {
@@ -77,7 +75,4 @@ class AddKategoriActivity : AppCompatActivity(), KategoriIconDialog.OnIconSelect
 
         return super.onOptionsItemSelected(item)
     }
-
-
-
 }
