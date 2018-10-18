@@ -60,7 +60,6 @@
     <string name="gallery">Gallery</string>
     <string name="stock_barang">5</string>
     <string name="tambah_kategori">Tambah Kategori</string>
-    <string name="beranda">Beranda</string>
     <string name="select_picture">Select Picture</string>
     <string name="berhasil_tambah">Barang berhasil ditambahkan</string>
 </resources>
