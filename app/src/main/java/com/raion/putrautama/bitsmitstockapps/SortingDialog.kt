@@ -1,5 +1,6 @@
 package com.raion.putrautama.bitsmitstockapps
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.BottomSheetDialogFragment
@@ -9,16 +10,24 @@ import android.view.ViewGroup
 import android.widget.TextView
 import kotlinx.android.synthetic.main.sorting_dialog.*
 
+
+
+
 class SortingDialog : BottomSheetDialogFragment() {
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return super.onCreateView(inflater, container, savedInstanceState)
+    override fun onCreateView(inflater: LayoutInflater,
+                              container: ViewGroup?,
+                              savedInstanceState: Bundle?): View? {
+
+        return inflater.inflate(R.layout.sorting_dialog, container,
+                false)
+
     }
 
-    override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        tutup_btn.setOnClickListener{
+        tutup_btn.setOnClickListener {
             dialog.dismiss()
         }
 
@@ -27,21 +36,25 @@ class SortingDialog : BottomSheetDialogFragment() {
         stock_tersedikit_tv.sendDataToFragmentAllItems("jumlah")
         harga_tertinggi_tv.sendDataToFragmentAllItems("harga1")
         harga_terendah_tv.sendDataToFragmentAllItems("harga")
+
+
     }
 
     companion object {
-        fun newInstance() : SortingDialog{
-            return  SortingDialog()
+
+        fun newInstance(): SortingDialog {
+            return SortingDialog()
         }
     }
 
     fun TextView.sendDataToFragmentAllItems(sorting : String){
-        this.setOnClickListener{
+        this.setOnClickListener {
             val intent = Intent()
-            intent.putExtra("sorting",sorting)
+            intent.putExtra("sorting", sorting)
             targetFragment!!.onActivityResult(
-                    targetRequestCode, android.app.Activity.RESULT_OK, intent)
+                    targetRequestCode, Activity.RESULT_OK, intent)
             dialog.dismiss()
         }
     }
+
 }
