@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".barang.AddKategoriActivity">
+    tools:context=".kategori.AddKategoriActivity">
 
     <TextView
         android:id="@+id/tambah_kategori_tv"

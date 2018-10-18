@@ -1,5 +1,6 @@
 package com.raion.putrautama.bitsmitstockapps
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.v4.app.Fragment
@@ -48,6 +49,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_beranda -> {
                 supportActionBar?.title = "Beranda"
                 updateFragment(MainFragment())
+            }
+            R.id.nav_keluar ->{
+                val intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
+                finish()
             }
 
         }

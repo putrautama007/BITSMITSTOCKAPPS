@@ -119,8 +119,8 @@ class TambahBarangActivity : AppCompatActivity() {
 
         val mRef = FirebaseDatabase.getInstance().reference.child("barang")
 
-        val barang = Barang(barangUrl, harga, stock, namaBarang, kategoriID)
         val key = mRef.push().key
+        val barang = Barang(barangUrl, harga.toInt(), stock, namaBarang, kategoriID, key)
 
         mRef.child(key).setValue(barang).addOnCompleteListener { task ->
             alertDialog.dismiss()

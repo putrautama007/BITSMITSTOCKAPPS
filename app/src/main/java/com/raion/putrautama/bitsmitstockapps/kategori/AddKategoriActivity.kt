@@ -27,7 +27,7 @@ class AddKategoriActivity : AppCompatActivity(), KategoriIconDialog.OnIconSelect
         setContentView(R.layout.activity_add_kategori)
 
         supportActionBar?.setTitle("Tambah Kategori")
-        supportActionBar?.setDisplayHomeAsUpEnabled(true);
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         kategori_icon.setOnClickListener{
             showKategoriDialog()
