@@ -8,6 +8,7 @@ import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
+import com.raion.putrautama.bitsmitstockapps.laporan.LaporanHarianFragment
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
@@ -42,6 +43,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_beranda -> {
                 supportActionBar?.title = getString(R.string.beranda)
                 updateFragment(MainFragment())
+            }
+            R.id.nav_lap_perhari ->{
+                supportActionBar?.title = getString(R.string.laporan_harian)
+                updateFragment(LaporanHarianFragment())
             }
             R.id.nav_keluar ->{
                 val intent = Intent(this, LoginActivity::class.java)

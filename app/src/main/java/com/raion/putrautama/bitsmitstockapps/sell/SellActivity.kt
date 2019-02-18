@@ -10,6 +10,8 @@ import com.raion.putrautama.bitsmitstockapps.R
 import com.raion.putrautama.bitsmitstockapps.model.Transaksi
 import kotlinx.android.synthetic.main.activity_sell.*
 import java.util.*
+import java.text.SimpleDateFormat
+
 
 class SellActivity : AppCompatActivity() {
 
@@ -76,10 +78,13 @@ class SellActivity : AppCompatActivity() {
         val mRef = FirebaseDatabase.getInstance().reference.child("transaksi")
 
         val totalHarga = terjual * hargaBarang!!
-        val waktu = Calendar.getInstance().time.toString()
+        val waktu = Calendar.getInstance().time
+        val dateformat = SimpleDateFormat("yyyy-MM-dd")
+        val date = dateformat.format(waktu)
+
         val transaksi_id = mRef.push().key
 
-        val transaksi = Transaksi(transaksi_id, namaBarang!!, terjual, hargaBarang!!, totalHarga, fotoBarang!!, waktu)
+        val transaksi = Transaksi(transaksi_id, namaBarang!!, terjual, hargaBarang!!, totalHarga, fotoBarang!!, date)
 
         mRef.child(transaksi_id).setValue(transaksi).addOnCompleteListener{task ->
             if (task.isSuccessful) {

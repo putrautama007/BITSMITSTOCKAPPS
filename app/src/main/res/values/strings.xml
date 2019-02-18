@@ -62,4 +62,5 @@
     <string name="tambah_kategori">Tambah Kategori</string>
     <string name="select_picture">Select Picture</string>
     <string name="berhasil_tambah">Barang berhasil ditambahkan</string>
+    <string name="laporan_harian">Laporan Harian</string>
 </resources>
