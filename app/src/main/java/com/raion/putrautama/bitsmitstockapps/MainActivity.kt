@@ -48,6 +48,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 supportActionBar?.title = getString(R.string.laporan_harian)
                 updateFragment(LaporanHarianFragment())
             }
+            R.id.nav_tentang ->{
+                supportActionBar?.title = getString(R.string.tentang)
+                updateFragment(AboutAppsFragment())
+            }
             R.id.nav_keluar ->{
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
